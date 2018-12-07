@@ -1,3 +1,24 @@
-<p>
-  admin works!
-</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Admin</title>
+  </head>
+  <body>
+    <p>Enter a new project(enter)</p>
+    <input type="text" (keyup.enter)="addRoute(product)" #product />
+
+    <ul>
+      <li *ngFor="let products of (product$ | async)">
+        {{ products.$value }}
+        <button>
+          <i (click)="updateproduct(products)" class=" fa fa-pencil">
+            Add to Manager List
+          </i>
+        </button>
+
+        <button (click)="delete(products)">Delete</button>
+      </li>
+    </ul>
+    <button (click)="ngOnDestroy()">Click to shut down database</button>
+  </body>
+</html>

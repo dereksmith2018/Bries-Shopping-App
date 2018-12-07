@@ -3,10 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  apiKey: "AIzaSyA_WTuFI_OJUcf5R-i7SzaFngHD5vhA7X8",
-  authDomain: "briesdata.firebaseapp.com",
-  databaseURL: "https://briesdata.firebaseio.com",
-  projectId: "briesdata",
-  storageBucket: "briesdata.appspot.com",
-  messagingSenderId: "1029179498000"
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyA_WTuFI_OJUcf5R-i7SzaFngHD5vhA7X8",
+    authDomain: "briesdata.firebaseapp.com",
+    databaseURL: "https://briesdata.firebaseio.com",
+    projectId: "briesdata",
+    storageBucket: "briesdata.appspot.com",
+    messagingSenderId: "1029179498000"
+  }
 };

@@ -1,7 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
-import { HttpModule } from "@angular/http";
+// import { HttpModule } from "@angular/http";
 
 import { AppComponent } from "./app.component";
 import { AdminComponent } from "./admin/admin.component";
@@ -14,19 +14,23 @@ import {
 import { LoginComponent } from "./login/login.component";
 import { environment } from "../environments/environment";
 import { RouterModule, Routes } from "@angular/router";
-import { HeaderComponent } from './header/header.component';
-import { SocialComponent } from './social/social.component';
+import { HeaderComponent } from "./header/header.component";
+import { SocialComponent } from "./social/social.component";
 
 @NgModule({
-  declarations: [AppComponent, AdminComponent, LoginComponent, HeaderComponent, SocialComponent],
+  declarations: [
+    AppComponent,
+    AdminComponent,
+    LoginComponent,
+    HeaderComponent,
+    SocialComponent
+  ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
+    // HttpModule,
 
-    RouterModule.forRoot([
-      { path: "weather-update", component: AdminComponent }
-    ]),
+    RouterModule.forRoot([{ path: "admin", component: AdminComponent }]),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule
   ],
