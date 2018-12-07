@@ -1,3 +1,46 @@
-<p>
-  header works!
-</p>
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="topnav">
+      <!-- <a class="active" href="/">Book Your Trip</a> -->
+      <div id="topButton" class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">
+          PRODUCTS<i class="fa fa-caret-down"></i>
+        </button>
+
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#deals">SKIN CARE</a> <a href="#passes">MAKE-UP </a>
+          <a href="#lessons">LESSON</a>
+        </div>
+      </div>
+      <div id="topButtonTwo" style="float:right" class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">
+          ENGLISH <i class="fa fa-caret-down"></i>
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#english">ENGLISH</a> <a href="#spanish">SPANISH</a>
+        </div>
+      </div>
+
+      <a routerLink="/admin" style="float:right" href="/">Admin</a>
+      <router-outlet></router-outlet>
+    </div>
+    <script>
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      window.onclick = function(event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
