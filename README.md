@@ -1,27 +1,40 @@
-# BrieShop
+# Brie's Shopping App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.1.
+#### By Derek Smith
 
-## Development server
+#### Deployment
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+To start:
+npm i
+ng serve -o to open a server.
+Navigate to http://localhost:4200.
 
-## Code scaffolding
+## Description
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+A website to festure and display products. The User will be able to have saved accounts to login. Has a viewing section for product, with descriptions about each. Users will have a cart that stores selected product. The admin will have access to update the shopping database, and images.
 
-## Build
+## Setup/Installation Requirements
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Clone this repository
+- Run npm install
+- Open Webpage
 
-## Running unit tests
+### Specs
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+| Spec                                                         | Input                         | Output                                 |
+| :----------------------------------------------------------- | :---------------------------- | :------------------------------------- |
+| **The program takes the user input and puts it in an array** | Input: {Selected Merchandise} | Output: Cart: Merchandise Total: $$.\$ |
 
-## Running end-to-end tests
+## Known Bugs
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+_There are no known bugs._
 
-## Further help
+## Support and contact details
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+\_Derek Smith: Derek.Smith.Sea@gmail.com
+
+## Technologies Used
+
+\_HTML, JavaScript, Node
+
+###Copyright (c) 2018 Derek Smith
